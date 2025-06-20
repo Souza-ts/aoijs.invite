@@ -1,0 +1,52 @@
+{
+  "name": "aoijs.invite",
+  "description": "An extension to handle invite system for aoi.js",
+  "version": "1.0.0",
+  "main": "./dist/cjs/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaruidevelopment/aoi.invite.git"
+  },
+  "keywords": [
+    "invite",
+    "aoi.js",
+    "aoijs",
+    "aoi.invite",
+    "aoijs-extension"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "aoi.js": "^6.10.3",
+    "discord.js": "^14.20.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@aoijs/aoi.db": "^0.0.0",
+    "@akarui/structures": "^1.0.0",
+    "chalk": "^5.4.1"
+  },
+  "author": "aoijs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Souza-ts/aoijs.invite/issues"
+  },
+  "homepage": "https://github.com/Souza-ts/aoijs.invite#readme",
+  "scripts": {
+    "test": "node tests",
+    "start": "node index.js",
+    "build": "npx tsc -p tsconfig.esm.json && npx tsc -p tsconfig.cjs.json && npm run createpack",
+    "createpack": "node builder/pack.js",
+    "lint": "eslint . --ext .ts --fix ",
+    "buildStart": "npm run build && npm start",
+    "genmd": "node generators/readme.js"
+  },
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  }
+}
