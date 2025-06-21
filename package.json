@@ -1,7 +1,7 @@
 {
   "name": "aoijs.invite",
   "description": "An extension to handle invite system for aoi.js",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "main": "./dist/cjs/index.js",
   "repository": {
     "type": "git",
