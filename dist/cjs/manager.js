@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_events_1 = require("node:events");
-const aoi_db_1 = require("@akarui/aoi.db");
-const structures_1 = require("@akarui/structures");
+const aoi_db_1 = require("@aoijs/aoi.db");
+const structures_1 = require("@aoijs/structures");
 const functions_js_1 = __importDefault(require("./functions.js"));
 class InviteManager extends node_events_1.EventEmitter {
     #client;
